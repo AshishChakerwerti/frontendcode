@@ -5,5 +5,5 @@
     - name: copy artifact
       copy:
         src: ./index.html
-        dest: /tmp/html
+        dest: /tmp/frontend.html
       become: yes
