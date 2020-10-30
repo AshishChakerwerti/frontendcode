@@ -1,0 +1,9 @@
+- name: deploy on target
+  hosts: 192.168.29.16
+
+  tasks:
+    - name: copy artifact
+      copy:
+        src: ./index.html
+        dest: /tmp/html
+      become: yes
