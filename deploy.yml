@@ -4,6 +4,6 @@
   tasks:
     - name: copy artifact
       copy:
-        src: ./indexnew.html
+        src: ./index.html
         dest: /tmp/frontend.html
       become: yes
