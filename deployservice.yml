@@ -1,6 +1,9 @@
 - name: Reload service nginx, in all cases
   hosts: 192.168.29.16
-  service:
-    name: nginx
-    state: restart
-  became: yes
+  
+  tasks:
+   - name: restart artifact
+     service:
+       name: nginx
+       state: restart
+     become: yes
