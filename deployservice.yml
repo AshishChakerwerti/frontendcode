@@ -2,4 +2,5 @@
   hosts: 192.168.29.16
   service:
     name: nginx
-    state: reloaded
+    state: restart
+  became: yes
