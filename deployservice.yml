@@ -4,6 +4,6 @@
   tasks:
    - name: restart artifact
      service:
-       name: nginx
-       state: restart
+       name:  nginx
+       state: reloaded
      become: yes
